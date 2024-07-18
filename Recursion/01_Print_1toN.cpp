@@ -23,29 +23,11 @@ using namespace std;
 //second approach
 //using backtracking
 
-
-// void printNos(int i,int n) {
-//     // Write your code here.
-//     if(i==0)
-//     return;
-//     i--;
-//     printNos(i,n);
-//     cout<<i<<" ";
-// }
-
-// int main(){
-// 	int n;
-// 	cin>>n;
-// 	printNos(n,n);
-// }
-
 void printNos(int n){
-    if(n==0)
+    if(n<1)
     return;
-    n--;
-    // cout<<n<<endl;
-    printNos(n);
-    cout<<n+1<<" ";
+    printNos(n-1);
+    cout<<n<<" ";
 }
 
 int main(){

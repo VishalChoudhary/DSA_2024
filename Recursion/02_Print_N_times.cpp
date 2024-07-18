@@ -3,17 +3,16 @@
 #include<iostream>
 using namespace std;
 
-void printNTimes(int i,int n) {
+void printNTimes(int n) {
     // Write your code here.
-    if(i>n)
+    if(n<1)
     return;
     cout<<"GFG"<<" ";
-    i++;
-    printNTimes(i,n);
+    printNTimes(n-1);
 }
 
 int main(){
 	int n;
 	cin>>n;
-	printNTimes(1,n);
+	printNTimes(n);
 }
