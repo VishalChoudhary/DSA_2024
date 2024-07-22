@@ -7,8 +7,7 @@ void printNTimes(int n){
     if(n==0)
     return;
     cout<<n<<" ";
-    n--;
-    printNTimes(n);
+    printNTimes(n-1);
 }
 
 int main()
